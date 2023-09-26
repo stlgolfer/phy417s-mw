@@ -8,7 +8,7 @@ Double_t Linfit(Double_t *x, Double_t *par)
   return fitval;
 }
 
-void LinearFit(){
+void LinearFitReflection(){
 
   gStyle ->SetOptFit(11111111);
   double xx[35],yy[35];
@@ -66,13 +66,12 @@ void LinearFit(){
 
   TF1 *theory = new TF1("theory", "1.442*x", 0, 1.0);
 
-  gtdata->SetTitle("Snell's Law");
-  gtdata->GetXaxis()->SetTitle("Sine of Incident Angle       ");
-  gtdata->GetYaxis()->SetTitle("Sine of Refracted Angle      ");
+  gtdata->SetTitle("Law of Reflection");
+  gtdata->GetXaxis()->SetTitle("Incident Angle");
+  gtdata->GetYaxis()->SetTitle("Refracted Angle");
   gtdata ->Draw("AP");
   theory->SetLineColor(4);
   theory ->Draw("SAME");
   
 }
   
-

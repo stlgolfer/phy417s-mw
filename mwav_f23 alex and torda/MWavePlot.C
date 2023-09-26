@@ -5,6 +5,7 @@
  
 void MWavePlot(){
   // read in data
+  gStyle ->SetOptFit(1111);
   vector<Double_t> vvx;
   vector<Double_t> vvy;
   Double_t xdat,ydat;
