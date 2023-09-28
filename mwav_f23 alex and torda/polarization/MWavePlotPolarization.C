@@ -12,7 +12,7 @@ void MWavePlotPolarization(){
  
   // Read in Data
   fstream infile;
-  TString *fname = new TString("0 degrees sweep");
+  TString *fname = new TString("5 degrees sweep");
   infile.open(*fname, ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
@@ -59,7 +59,7 @@ void MWavePlotPolarization(){
   //calibration and plot in terms of angle
   double intercept=-336.2;
   double slope=64.51;
-  double Yerror=0.00005;
+  double Yerror=0.0005;
 
   TH1F *hist2 = new TH1F("hist2",*fname,1800,-90.0, 90.0);
   for(int jx=1; jx<vvsize; jx++){
