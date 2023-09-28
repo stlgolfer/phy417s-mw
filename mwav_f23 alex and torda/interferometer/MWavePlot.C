@@ -25,7 +25,7 @@ void MWavePlot(){
   Int_t vvsize = vvx.size();
   cout<<"Data size = "<<vvsize<< endl;
   // histogram parameters
-  Int_t nbin = 500;       // number of bins in the final plot
+  Int_t nbin = 1000;       // number of bins in the final plot
  
   Double_t xmi = vvx[0], xma = vvx[0], ymi = vvy[0], yma = vvy[0];   //check the x and y range
   for (Int_t i=0; i!=vvsize; i++){
@@ -55,7 +55,8 @@ void MWavePlot(){
   hist1->Fill(vvx[i]*_slope+_intercept,vvy[i],1.0);}
   hist1->GetXaxis()->SetTitle("X axis title");
   hist1->GetYaxis()->SetTitle("Y axis title");
-  hist1->Draw();
+  hist1->SetMarkerStyle(20);
+  hist1->Draw("H");
 
   //calibration and plot in terms of angle
   double intercept=-335.0;
