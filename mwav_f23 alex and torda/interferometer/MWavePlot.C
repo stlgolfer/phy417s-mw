@@ -12,7 +12,7 @@ void MWavePlot(){
  
   // Read in Data
   fstream infile;
-  infile.open("interferometer experiment.txt", ios_base::in);
+  infile.open("inter run 2", ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
     ydat=ydat+0.025;
@@ -25,7 +25,7 @@ void MWavePlot(){
   Int_t vvsize = vvx.size();
   cout<<"Data size = "<<vvsize<< endl;
   // histogram parameters
-  Int_t nbin = 360;       // number of bins in the final plot
+  Int_t nbin = 500;       // number of bins in the final plot
  
   Double_t xmi = vvx[0], xma = vvx[0], ymi = vvy[0], yma = vvy[0];   //check the x and y range
   for (Int_t i=0; i!=vvsize; i++){
