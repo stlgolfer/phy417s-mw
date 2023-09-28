@@ -1,5 +1,9 @@
 {
     "files.associations": {
-        "MWaveDataSim.C": "cpp"
+        "MWaveDataSim.C": "cpp",
+        "FitV2AngleRefraction.C": "cpp",
+        "MWavePlot.C": "cpp",
+        "MWavePlotRefraction.C": "cpp",
+        "MWavePlotPolarization.C": "cpp"
     }
 }
