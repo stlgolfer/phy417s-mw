@@ -11,10 +11,10 @@ void MWaveDataSim(){
  
   // Read in Data
   fstream infile;
-  infile.open("single slit 3cm run 2", ios_base::in);
+  infile.open("single slit 18cm.txt", ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
-    ydat=ydat+0.1;
+    ydat=ydat+0.09;
     vvx.push_back(xdat) ;
     vvy.push_back(ydat) ;
   
@@ -83,10 +83,10 @@ void MWaveDataSim(){
   // h  : height of the slit
   // for a single slit, treat it a double slit with sl=0
  
-        double wl=2.85;
+        double wl=2.85; // 2.85
         double rd=51.4;
         double rs=47.1;
-        double d=3;
+        double d=18;
         double sl=0;
         double h=18.0;
  

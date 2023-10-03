@@ -12,7 +12,7 @@ void MWavePlotRefraction(){
  
   // Read in Data
   fstream infile;
-  TString *fname = new TString("refraction 20 degree incidence");
+  TString *fname = new TString("refraction 10 degree incidence");
   infile.open(*fname, ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
@@ -57,8 +57,8 @@ void MWavePlotRefraction(){
   hist1->Draw();
 
   //calibration and plot in terms of angle
-  double intercept=-336.2;
-  double slope=64.51;
+  double intercept=336.2;
+  double slope=-64.51;
   double Yerror=0.01;
 
   TH1F *hist2 = new TH1F("hist2",*fname,1800,-90.0, 90.0);
@@ -76,7 +76,7 @@ void MWavePlotRefraction(){
   hist2->GetYaxis()->SetTitle("Intensity        ");
   hist2 ->SetMarkerStyle(20);
   hist2->Draw();
-  hist2->Fit("gaus","R","",-5,25);
+  // hist2->Fit("gaus","R","",-5,25);
 
 }
  

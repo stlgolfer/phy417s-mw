@@ -11,7 +11,7 @@ void MWaveDataSim(){
  
   // Read in Data
   fstream infile;
-  infile.open("double slit slide A.txt", ios_base::in);
+  infile.open("double slit slide B.txt", ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
     ydat=ydat+0.1;
@@ -86,8 +86,8 @@ void MWaveDataSim(){
         double wl=2.85;
         double rd=51.4;
         double rs=47.1;
-        double d=3;
-        double sl=2.5;
+        double d=6;
+        double sl=3;
         double h=18.0;
  
 //Define histogram
