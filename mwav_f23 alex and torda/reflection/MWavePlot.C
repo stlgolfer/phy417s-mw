@@ -11,7 +11,7 @@ void MWavePlot(){
  
   // Read in Data
   fstream infile;
-  TString *fname = new TString("reflection 1.4 gain 55 degree incidence");
+  TString *fname = new TString("reflection 1.4 gain 30 degree incidence");
   infile.open(*fname, ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
