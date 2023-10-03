@@ -4,6 +4,7 @@
         "FitV2AngleRefraction.C": "cpp",
         "MWavePlot.C": "cpp",
         "MWavePlotRefraction.C": "cpp",
-        "MWavePlotPolarization.C": "cpp"
+        "MWavePlotPolarization.C": "cpp",
+        "LinearFit.C": "cpp"
     }
 }
