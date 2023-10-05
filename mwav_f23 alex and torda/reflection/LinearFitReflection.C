@@ -17,42 +17,42 @@ void LinearFitReflection(){
   //enter data
 
 
-  int ndata=10;
-  xx[0] = 10;
-  xx[1] = 15;
-  xx[2] = 20;
-  xx[3] = 25;
-  xx[4] = 30;
-  xx[5] = 35;
-  xx[6] = 40;
-  xx[7] = 45;
-  xx[8] = 50;
-  xx[9] = 55;
+  int ndata=6;
+  // xx[0] = 10;
+  // xx[1] = 15;
+  // xx[2] = 20;
+  // xx[3] = 25;
+  xx[0] = 30;
+  xx[1] = 35;
+  xx[2] = 40;
+  xx[3] = 45;
+  xx[4] = 50;
+  xx[5] = 55;
 
-  yy[0]=8.814;
-  yy[1]=12.7;
-  yy[2]=18.48;
-  yy[3]=23.37;
-  yy[4]=28.5;
-  yy[5]=33.39;
-  yy[6]=38.19;
-  yy[7]=42.97;
-  yy[8]=47.17;
-  yy[9]=51.99;
+  // yy[0]=8.814;
+  // yy[1]=12.7;
+  // yy[2]=18.48;
+  // yy[3]=23.37;
+  yy[0]=28.5;
+  yy[1]=33.39;
+  yy[2]=38.19;
+  yy[3]=42.97;
+  yy[4]=47.17;
+  yy[5]=51.99;
   
-  yerror[0]=8;
-  yerror[1]=5;
-  yerror[2]=12;
-  yerror[3]=12;
-  yerror[4]=11;
-  yerror[5]=7;
-  yerror[6]=12;
-  yerror[7]=13;
-  yerror[8]=14;
-  yerror[9]=10;
+  // yerror[0]=8;
+  // yerror[1]=5;
+  // yerror[2]=12;
+  // yerror[3]=12;
+  yerror[0]=2.5;
+  yerror[1]=2.5;
+  yerror[2]=2.5;
+  yerror[3]=2.5;
+  yerror[4]=2.5;
+  yerror[5]=2.5;
 
   for(int i=0;i<ndata;i++) {
-    xerror[i] = 2.22; // basically just constant error in angle
+    xerror[i] = 0.5; // basically just constant error in angle
     // yerror[i] = // reflection angle varies though
   }
 
