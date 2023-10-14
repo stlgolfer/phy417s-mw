@@ -33,8 +33,8 @@ void LinearFitInter(){
 
   for(int i=0;i<ndata;i++) {
     //xx[i] = sin(i*5*3.14/180);
-    //xerror[i] = (1.80*3.14/180)*cos(i*3.14*5/180);
-    yerror[i] = 0.1;
+    xerror[i] = 0.1;
+    yerror[i] = 1;
   }
 
   double par[10];  
