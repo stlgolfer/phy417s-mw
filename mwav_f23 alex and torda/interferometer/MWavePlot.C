@@ -49,12 +49,12 @@ void MWavePlot(){
   // book histogram
   double _slope = 7.625;
   double _intercept = 8.856;
-  TProfile *hist1 = new TProfile("hist1","Raw Data",nbin,xmi*_slope+_intercept,xma*_slope+_intercept);
+  TProfile *hist1 = new TProfile("hist1","Interferometer",nbin,xmi*_slope+_intercept,xma*_slope+_intercept);
  
   for (Int_t i=0; i!=vvsize; i++) {
   hist1->Fill(vvx[i]*_slope+_intercept,vvy[i],1.0);}
-  hist1->GetXaxis()->SetTitle("X axis title");
-  hist1->GetYaxis()->SetTitle("Y axis title");
+  hist1->GetXaxis()->SetTitle("Separation Distance (cm)");
+  hist1->GetYaxis()->SetTitle("Intensity");
   hist1->SetMarkerStyle(20);
   hist1->Draw("H");
 

@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "FitV2Angle.C": "cpp"
+        "FitV2Angle.C": "cpp",
+        "LinearFit.C": "cpp",
+        "MWavePlotPolarization.C": "cpp"
     }
 }
