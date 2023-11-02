@@ -11,7 +11,7 @@ void MWavePlotBragg(){
  
   // Read in Data
   fstream infile;
-  TString *fname = new TString("100 bragg");
+  TString *fname = new TString("210 bragg");
   infile.open(*fname, ios_base::in);
  while (infile>>xdat>>ydat){
 	// use for single slit:
@@ -58,7 +58,7 @@ void MWavePlotBragg(){
   //calibration and plot in terms of angle
   double intercept=336.2;
   double slope=-64.51;
-  double Yerror=0.01;
+  double Yerror=0.002;
 
   TH1F *hist2 = new TH1F("hist2",*fname, 1800,-90.0, 90.0);
   for(int jx=1; jx<vvsize; jx++){
