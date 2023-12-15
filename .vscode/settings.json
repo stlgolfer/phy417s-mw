@@ -8,6 +8,7 @@
         "LinearFitInter.C": "cpp",
         "LinearFitInter copy.C": "cpp",
         "LinearFitDistance.C": "cpp",
-        "MWavePlotBragg.C": "cpp"
+        "MWavePlotBragg.C": "cpp",
+        "LinearFitReflection.C": "cpp"
     }
 }

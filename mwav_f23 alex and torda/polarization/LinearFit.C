@@ -49,6 +49,7 @@ void LinearFit()
   xx[7] = 40;
   xx[8] = 30;
   xx[9] = 25;
+  // xx[10] = 20;
 
   yy[0] = 0.0075;
   yy[1] = 0.01719;
@@ -60,6 +61,8 @@ void LinearFit()
   yy[7] = 0.7393;
   yy[8] = 0.9579;
   yy[9] = 1.001;
+  // yy[10] = 0.36;
+  // yy[11] = 0.37;
 
   yerror[0] = 0.11018;
   yerror[1] = 0.11017;
@@ -102,7 +105,7 @@ void LinearFit()
   //TF1 *theory = new TF1("theory", "TMath::Power(TMath::Cos((TMath::Pi() / 180)*theta[0]),2)", 25, 90);
 
   gtdata->SetTitle("Polarization");
-  gtdata->GetXaxis()->SetTitle("Incident Angle (Degrees)");
+  gtdata->GetXaxis()->SetTitle("Polarizer Angle (Degrees)");
   gtdata->GetYaxis()->SetTitle("Intensity");
   gtdata->Draw("AP");
   //theory->SetLineColor(4);
