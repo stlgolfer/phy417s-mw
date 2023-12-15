@@ -9,6 +9,10 @@
         "LinearFitInter copy.C": "cpp",
         "LinearFitDistance.C": "cpp",
         "MWavePlotBragg.C": "cpp",
-        "LinearFitReflection.C": "cpp"
+        "LinearFitReflection.C": "cpp",
+        "ComptonPlot.C": "cpp",
+        "MWaveDataSim.C": "cpp",
+        "MWavePlot.C": "cpp",
+        "FitPolarization.C": "cpp"
     }
 }

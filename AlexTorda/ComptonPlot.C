@@ -3,9 +3,6 @@
 #include <fstream>
 #include <vector>
 
-file_data = "90 degrees.TKA";
-file_bkg = "90 bkg.TKA";
-
   Double_t  fit_center = 6000.;
   //Edit these values to change the range of values included in the fit.
   Double_t xl1=3000.;
@@ -88,7 +85,7 @@ void ComptonPlot(){
 
   // Read in Data
   fstream infile1;
-  infile1.open(file_data, ios_base::in);
+  infile1.open("0 bkg.TKA", ios_base::in);
   while (infile1>>ydat){
     //cout <<ydat<<"\n"; 
     vy.push_back(ydat) ;
@@ -100,7 +97,7 @@ void ComptonPlot(){
 
   // Read in Background
   fstream infile2;
-  infile2.open(file_bkg, ios_base::in);// bg-70degtka
+  infile2.open("BlankBackground.TKA", ios_base::in);// bg-70degtka
   while (infile2>>xdat){
     //cout <<xdat<<"\n"; 
     vx.push_back(xdat) ;
@@ -178,7 +175,7 @@ void ComptonPlot(){
   TF1 *fit1 = new TF1("fit1",GaussPoly2, 0.,16000.,7); // range & number of parameters 
   //These are the guesses for the values of the parameters. Enter values close to what you expect.  
   //fit1 ->SetParameters(1000., 5000., 250.0, 100.0, 0.0., 0.0, 0.0); //original
-  fit1 ->SetParameters(1000., fit_center, 250.0, 100.0, 0.0., 0.0, 0.0); 
+  fit1 ->SetParameters(1000., fit_center, 250.0, 100.0, 0.0, 0.0, 0.0); 
   //Edit these values to change the range of values included in the fit.
   //Double_t xl1=3000.;
   //Double_t xh1=10000.; 
