@@ -13,6 +13,9 @@
         "ComptonPlot.C": "cpp",
         "MWaveDataSim.C": "cpp",
         "MWavePlot.C": "cpp",
-        "FitPolarization.C": "cpp"
+        "FitPolarization.C": "cpp",
+        "EnergyFit.C": "cpp",
+        "EnergyFit copy.C": "cpp",
+        "CrossSectionFit.C": "cpp"
     }
 }

@@ -96,7 +96,7 @@ void EnergyFit(){
 
   gtdata->SetTitle("Compton Fit");
   gtdata->GetXaxis()->SetTitle("Theta (in Deg)");
-  gtdata->GetYaxis()->SetTitle("Sine of Refracted Angle      ");
+  gtdata->GetYaxis()->SetTitle("Scattered Photon Energy (in MeV)");
   gtdata ->Draw("AP");
 //   theory->SetLineColor(4);
 //   theory ->Draw("SAME");

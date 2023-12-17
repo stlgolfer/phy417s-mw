@@ -85,7 +85,7 @@ void ComptonPlot(){
 
   // Read in Data
   fstream infile1;
-  infile1.open("0 bkg.TKA", ios_base::in);
+  infile1.open("30 degrees.TKA", ios_base::in);
   while (infile1>>ydat){
     //cout <<ydat<<"\n"; 
     vy.push_back(ydat) ;
@@ -97,7 +97,7 @@ void ComptonPlot(){
 
   // Read in Background
   fstream infile2;
-  infile2.open("BlankBackground.TKA", ios_base::in);// bg-70degtka
+  infile2.open("30 bkg.TKA", ios_base::in);// bg-70degtka
   while (infile2>>xdat){
     //cout <<xdat<<"\n"; 
     vx.push_back(xdat) ;
